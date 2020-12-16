@@ -1,0 +1,247 @@
+@import "variables";
+@import "mixin";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+
+    .box1 {
+        background-color: rgb(207, 154, 163);
+        min-height: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+ 
+
+        .left {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                margin-bottom: 0rem;
+
+                @include mobile {
+                    font-size: 11px;
+                }
+
+
+            }
+
+            .cherry {
+                width: 18px;
+                margin: 3px;
+
+                @include mobile {
+                    width: 14px;
+                    margin: 1px;
+                }
+
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                margin-bottom: 0rem;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+
+            }
+
+            .down {
+                margin: 7px;
+                width: 12px;
+
+                @include mobile {
+                    margin: 2px;
+                    width: 12px;
+                }
+
+            }
+        }
+    }
+
+    .box2 {
+        background-color: rgb(255, 249, 250);
+        min-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            padding: 21px;
+        }
+
+        .part1 {
+            display: flex;
+
+            p {
+                margin-bottom: 0rem;
+            }
+
+            .down2 {
+                margin: 5px;
+                width: 15px;
+            }
+        }
+
+        .part2 {
+            font-family: 'Piazzolla', serif;
+            color: rgb(252, 175, 186);
+            margin-left: 10rem;
+
+            @include mobile {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 3rem;
+
+                @include mobile {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .part3 {
+            width: 20rem;
+            display: flex;
+
+
+            ul {
+                width: 100%;
+                display: flex;
+                margin-bottom: 0rem;
+                justify-content: space-between;
+                padding-left: 0rem;
+                list-style: none;
+
+                @include mobile {
+                    justify-content: space-around;
+                }
+
+                li {
+                    justify-content: space-between;
+                }
+            }
+
+            .bag {
+                width: 18px;
+
+                margin-right: 8px;
+                margin-bottom: 2px;
+            }
+        }
+    }
+    .box3{
+.row{
+    --bs-gutter-x: 0rem;
+    .sol{
+        p{
+            margin: 24px 0px 24px 0px;
+           }
+           .picture{
+            max-width: 35rem;
+            @include mobile{
+                max-width: 21rem;
+            }
+           }
+       } 
+       .sag{
+        padding: 74px 0px 1px 95px;
+        @include mobile{
+            padding: 0;        }
+           .unit1{
+               h2{
+                font-family: 'Piazzolla', serif;
+                font-size: 2.5rem;
+               }
+           }
+           .unit2{
+            padding-top: 37px;
+               ul{
+                   list-style: disc;
+                   margin: 0;
+                padding-left: 1rem;
+               }
+           }
+           .unit3{
+               display: flex;
+               flex-direction: row;
+               padding-top: 56px;
+               p{
+                  border: 1px solid rgb(221, 143, 169);
+                  padding: 4px 9px 4px 9px;
+                  margin-bottom: 0;
+                  @include mobile{
+                    padding: 1px 7px 1px 7px;
+                  }
+
+               }
+               span{
+                   border: 1px solid  rgb(255, 220, 226);
+                   background-color: rgb(255, 220, 226);
+                   margin-left: 1.5rem;
+                   padding: 4px 14rem 0px 14rem;
+                   @include mobile{
+                    margin-left: 4px;
+                    padding: 2px 93px 2px 93px;
+                   }
+               }
+           }
+           .unit4{
+               ul{
+                   list-style: none;
+                   padding-left: 0;
+                   padding-top: 57px;
+                   margin-bottom: 0;
+                   li{
+                       display: flex;
+                       flex-direction: row;
+                       padding: 2px;
+                      p{
+                          @include mobile{
+                            font-size: 13px;
+                          }
+                      }
+                   }
+               }
+               .icon{
+                 
+                   width: 23px;
+                   margin: 0px 16px 12px 0px;
+               }
+           }
+           .unit5{
+               display: flex;
+               flex-direction: row;
+               padding-top: 68px;
+               p{
+                  
+                padding: 0px 59px 0px 0px;
+                text-decoration: underline;
+               }
+               span{
+                   text-decoration: underline;
+               }
+           }
+
+       }
+}
+    }
+}
